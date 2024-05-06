@@ -7,7 +7,7 @@
 
 :root.theme-light {
   --primary-weight: 400;
-  --title-weiht: 700;
+  --title-weight: 700;
   --bg-color: #ffffff;
   --accent-color: #000000;
   --btn-hover-color: #ffffff;
@@ -26,12 +26,10 @@
 
 :root.theme-dark {
   --primary-weight: 465;
-  --title-weiht: 785;
+  --title-weight: 785;
   --bg-color: #000000;
   --accent-color: #00cc14;
-  --decor-color: #00cc14;
-  --btn-hover-color: #000000;
-  --btn-hover-color: var(--decor-color);
+  --btn-hover-color: #00cc14;
   --bg-gradient: repeating-linear-gradient(
       to right,
       #000000 0 0.125rem,
@@ -48,7 +46,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --primary-weight: 400;
-    --title-weiht: 700;
+    --title-weight: 700;
     --bg-color: #ffffff;
     --accent-color: #000000;
     --btn-hover-color: #ffffff;
@@ -69,12 +67,10 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --primary-weight: 465;
-    --title-weiht: 785;
+    --title-weight: 785;
     --bg-color: #000000;
     --accent-color: #00cc14;
-    --decor-color: #00cc14;
-    --btn-hover-color: #000000;
-    --btn-hover-color: var(--decor-color);
+    --btn-hover-color: #00cc14;
     --bg-gradient: repeating-linear-gradient(
         to right,
         #000000 0 0.125rem,

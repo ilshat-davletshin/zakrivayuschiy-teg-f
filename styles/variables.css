@@ -1,14 +1,15 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --primary-font: "Inter-Variable";
-  --accent-font: "PressStart2P";
+  --primary-font: "Inter", sans-serif;
+  --accent-font: "PressStart2P", fantasy;
   --primary-weight: 400;
   --title-weight: 700;
   --bg-color: #ffffff;
   --accent-color: #000000;
   --sparks-color: #ff0000;
   --btn-hover-color: #ffffff;
+  --text-stroke: 0.0625rem #000000;
   --bg-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3 0 0.125rem,
