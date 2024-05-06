@@ -9,7 +9,7 @@
   --accent-color: #000000;
   --sparks-color: #ff0000;
   --btn-hover-color: #ffffff;
-  --text-stroke: 0.0625rem #000000;
+  --text-stroke: 0.0625rem var(--bg-color);
   --bg-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3 0 0.125rem,

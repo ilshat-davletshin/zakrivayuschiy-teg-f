@@ -135,7 +135,8 @@
   border-bottom: 0.125rem solid var(--accent-color);
   padding: 0.1875rem 0.6875rem;
   font-size: 1.125rem;
-  line-height: 1.39;
+  line-height: 1.21;
+  min-block-size: 2.0625rem;
   font-variation-settings: "wght" var(--title-weight);
 }
 
@@ -174,8 +175,8 @@
 ) {
   .card__decoration-label {
     text-shadow: none;
-    -webkit-text-stroke: 0.0625rem var(--bg-color);
-    text-stroke: 0.0625rem var(--bg-color);
+    -webkit-text-stroke: var(--text-stroke);
+    text-stroke: var(--text-stroke);
   }
 }
 
@@ -220,7 +221,6 @@
   border: 0.125rem solid var(--accent-color);
   font-family: var(--accent-font);
   font-size: 0.875rem;
-  line-height: 0.9;
   text-align: center;
   background-color: inherit;
   min-inline-size: 8.125rem;
@@ -258,6 +258,7 @@
   position: relative;
   z-index: 1;
   color: var(--btn-hover-color);
+  line-height: 0.9;
   mix-blend-mode: difference;
 }
 
@@ -279,9 +280,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0.5rem;
   min-height: 3.4375rem;
   border: 0.125rem solid var(--accent-color);
-  padding: 0.625rem 1.125rem;
+  padding: 0.9375rem 1.125rem;
   color: var(--btn-hover-color);
 }
 
@@ -291,7 +293,6 @@
 }
 
 .memory-button__text {
-  padding-inline-start: 0.5rem;
   font-family: var(--accent-font);
   font-size: 0.875rem;
 }
@@ -335,12 +336,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  inline-size: 100%;
   border: 0.125rem solid var(--accent-color);
   padding: 0.625rem;
   font-family: var(--accent-font);
   font-size: 0.875rem;
   text-transform: uppercase;
+  inline-size: 100%;
   min-block-size: 2.375rem;
 }
 
@@ -402,3 +403,5 @@
     font-size: 2.5rem;
   }
 }
+
+/* Не знаю что за приколы такие, но у меня обычном режиме в хроме мало данных по line-height(у меня все значения авто заданы в макете) и прочим, а в инкогнито все отображает. В обычном режиме все плагины поотключал, ничего не помогает, лучше наверное исппользовать фигму-приложение) */
