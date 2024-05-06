@@ -4,3 +4,87 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --primary-weight: 400;
+  --title-weiht: 700;
+  --bg-color: #ffffff;
+  --accent-color: #000000;
+  --btn-hover-color: #ffffff;
+  --bg-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0px 0.125rem,
+      transparent 0.125rem 0.25rem
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 0.125rem,
+      transparent 0.125rem 0.25rem
+    ),
+    repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+}
+
+:root.theme-dark {
+  --primary-weight: 465;
+  --title-weiht: 785;
+  --bg-color: #000000;
+  --accent-color: #00cc14;
+  --decor-color: #00cc14;
+  --btn-hover-color: #000000;
+  --btn-hover-color: var(--decor-color);
+  --bg-gradient: repeating-linear-gradient(
+      to right,
+      #000000 0 0.125rem,
+      transparent 0.125rem 0.25rem
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #000000 0 0.125rem,
+      transparent 0.125rem 0.25rem
+    ),
+    repeating-linear-gradient(to bottom, #007f0c, #004306);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary-weight: 400;
+    --title-weiht: 700;
+    --bg-color: #ffffff;
+    --accent-color: #000000;
+    --btn-hover-color: #ffffff;
+    --bg-gradient: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0 0.125rem,
+        transparent 0.125rem 0.25rem
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0 0.125rem,
+        transparent 0.125rem 0.25rem
+      ),
+      repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-weight: 465;
+    --title-weiht: 785;
+    --bg-color: #000000;
+    --accent-color: #00cc14;
+    --decor-color: #00cc14;
+    --btn-hover-color: #000000;
+    --btn-hover-color: var(--decor-color);
+    --bg-gradient: repeating-linear-gradient(
+        to right,
+        #000000 0 0.125rem,
+        transparent 0.125rem 0.25rem
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #000000 0 0.125rem,
+        transparent 0.125rem 0.25rem
+      ),
+      repeating-linear-gradient(to bottom, #007f0c, #004306);
+  }
+}
