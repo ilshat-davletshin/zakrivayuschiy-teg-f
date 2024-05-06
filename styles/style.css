@@ -283,7 +283,6 @@
   border: 0.125rem solid var(--accent-color);
   padding: 0.625rem 1.125rem;
   color: var(--btn-hover-color);
-  /* background-color: var(--bg-color); */
 }
 
 .memory-button__icon {
